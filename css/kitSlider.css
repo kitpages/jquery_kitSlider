@@ -1,0 +1,18 @@
+.kit-slider-button-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: auto; /* defined by the JS */
+    background-color: #000;
+    opacity: 0.5;
+}
+.kit-slider-button-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: auto; /* defined by the JS */
+    background-color: #000;
+    opacity: 0.5;
+}

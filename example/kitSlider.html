@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Example kitSlider</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="../jquery.kitSlider.js"></script>
+    <link rel="stylesheet" href="../css/kitSlider.css"/>
+
+<style>
+    .myslider {
+        width: 600px;
+        height: 210px;
+        overflow: hidden;
+    }
+    .el {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        background-color: #CCCCCC;
+        margin: 2px;
+        padding: 20px;
+    }
+</style>
+
+</head>
+<body>
+<h1>kitSlider</h1>
+<div class="myslider">
+    <div class="el">
+        div No 1
+    </div>
+    <div class="el">
+        div No 2<br/>
+        <a href="http://www.kitpages.fr"><img src="kitpages_small.jpg"/></a>
+    </div>
+    <div class="el">
+        div No 3
+    </div>
+    <div class="el">
+        div No 4
+    </div>
+    <div class="el">
+        <iframe href="kitSlider.html" width="50" height="60"></iframe>
+        div No 5
+    </div>
+    <div class="el">
+        <iframe width="210" height="157" src="http://www.youtube.com/embed/lBcORwcCf8I" frameborder="0" allowfullscreen></iframe>
+        div No 6
+    </div>
+    <div class="el">
+        div No 7
+    </div>
+    <div class="el">
+        div No 8
+    </div>
+</div>
+<script>
+$('.myslider').kitSlider();
+</script>
+</body>
+</html>
