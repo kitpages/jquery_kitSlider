@@ -115,8 +115,8 @@
                     '<div class="kit-slider-wrapper">'+
                     '<div class="kit-slider-container">'+html+'</div>'+
                     '</div>'+
-                    '<div class="kit-slider-button-left"></div>'+
-                    '<div class="kit-slider-button-right"></div>'
+                    '<div class="kit-slider-button-left">&lt;</div>'+
+                    '<div class="kit-slider-button-right">&gt;</div>'
                 );
                 self._boundingBox.find('.kit-slider-wrapper').css({
                     'position': 'relative',
@@ -139,10 +139,12 @@
                     }
                     self._isWindowLoadRendered = true;
                     self._buttonLeft.css({
-                        'height': self._container.height()+'px'
+                        'height': self._container.height()+'px',
+                        'line-height': self._container.height()+'px'
                     });
                     self._buttonRight.css({
-                        'height': self._container.height()+'px'
+                        'height': self._container.height()+'px',
+                        'line-height': self._container.height()+'px'
                     });
                     self._renderButton();
                     self._buttonRight.mousedown(function(e) {
